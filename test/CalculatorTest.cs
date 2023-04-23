@@ -25,6 +25,6 @@ public class CalculatorTest
         var result = calculator.Sum(0, 4);
 
         //Assert
-        Assert.Equal(6, result);
+        Assert.Equal(4, result);
     }
 }
