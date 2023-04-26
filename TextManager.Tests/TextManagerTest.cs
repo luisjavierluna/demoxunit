@@ -29,4 +29,26 @@ public class TextManagerTest
         // Assert
         Assert.NotEqual(0, result);
     }
+
+    [Fact]
+    public void FindWord()
+    {
+        var textmanager = new TextManager("hola hola desde xunit");
+
+        var result = textmanager.FindWord("hola", true);
+
+        Assert.NotEmpty(result);
+        Assert.Contains(0, result);
+        Assert.Contains(5, result);
+    }
+
+    [Fact]
+    public void FindWord_Empty()
+    {
+        var textmanager = new TextManager("hola hola desde xunit");
+
+        var result = textmanager.FindWord("mundo", true);
+
+        Assert.Empty(result);
+    }
 }
