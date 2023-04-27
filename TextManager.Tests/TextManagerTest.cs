@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using Xunit;
 
 namespace TextManager.Test;
@@ -8,13 +9,14 @@ public class TextManagerTest
     public void CountWords()
     {
         // Arrange
-        var textmanager = new TextManager("Texto Prueba");
+        var textmanager = new TextManager("Texto Prueba hola mundo");
     
         // Act
         var result = textmanager.CountWords();
     
         // Assert
-        Assert.Equal(2, result);
+        Assert.True(result > 1);
+        Assert.Equal(4, result);
     }
 
     [Fact]
@@ -50,5 +52,23 @@ public class TextManagerTest
         var result = textmanager.FindWord("mundo", true);
 
         Assert.Empty(result);
+    }
+
+    [Fact]
+    public void FindExactWord()
+    {
+        var textmanager = new TextManager("hola hola desde xunit");
+
+        var result = textmanager.FindExactWord("mundo", true);
+
+        Assert.IsType<List<Match>>(result);
+    }
+
+    [Fact]
+    public void FindExactWord_Exception()
+    {
+        var textmanager = new TextManager("hola hola desde xunit");
+
+        Assert.ThrowsAny<Exception>(() => textmanager.FindExactWord(null, true));
     }
 }
