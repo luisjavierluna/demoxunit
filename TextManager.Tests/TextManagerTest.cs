@@ -5,6 +5,14 @@ namespace TextManager.Test;
 
 public class TextManagerTest 
 {
+    TextManager TextManagerGlobal;
+
+    public TextManagerTest()
+    {
+        TextManagerGlobal = new TextManager("hola hola desde xunit");
+    }
+
+
     [Fact]
     public void CountWords()
     {
@@ -35,9 +43,7 @@ public class TextManagerTest
     [Fact]
     public void FindWord()
     {
-        var textmanager = new TextManager("hola hola desde xunit");
-
-        var result = textmanager.FindWord("hola", true);
+        var result = TextManagerGlobal.FindWord("hola", true);
 
         Assert.NotEmpty(result);
         Assert.Contains(0, result);
@@ -47,9 +53,7 @@ public class TextManagerTest
     [Fact]
     public void FindWord_Empty()
     {
-        var textmanager = new TextManager("hola hola desde xunit");
-
-        var result = textmanager.FindWord("mundo", true);
+        var result = TextManagerGlobal.FindWord("mundo", true);
 
         Assert.Empty(result);
     }
@@ -57,9 +61,7 @@ public class TextManagerTest
     [Fact]
     public void FindExactWord()
     {
-        var textmanager = new TextManager("hola hola desde xunit");
-
-        var result = textmanager.FindExactWord("mundo", true);
+        var result = TextManagerGlobal.FindExactWord("mundo", true);
 
         Assert.IsType<List<Match>>(result);
     }
