@@ -29,6 +29,20 @@ public class TextManagerTest
         Assert.Equal(expected, result);
     }
 
+    [Theory]
+    [ClassData(typeof(TextManagerClassData))]
+    public void CountWords_ClassData(string text, int expected)
+    {
+        // Arrange
+        var textmanager = new TextManager(text);
+    
+        // Act
+        var result = textmanager.CountWords();
+    
+        // Assert
+        Assert.Equal(expected, result);
+    }
+
     [Fact]
     public void CountWords_NotZero()
     {
