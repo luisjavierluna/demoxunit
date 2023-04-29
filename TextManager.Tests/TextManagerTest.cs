@@ -1,4 +1,5 @@
 using System.Text.RegularExpressions;
+using Microsoft.Extensions.Logging;
 using Moq;
 using Xunit;
 
@@ -7,12 +8,14 @@ namespace TextManager.Test;
 public class TextManagerTest 
 {
     TextManager TextManagerGlobal;
+    ILogger<TextManager> loggerTest;
 
     public TextManagerTest()
     {
-        TextManagerGlobal = new TextManager("hola hola desde xunit");
+        var mock =  new Mock<ILogger<TextManager>>();
+        loggerTest = mock.Object;
+        TextManagerGlobal = new TextManager("hola hola desde xunit", loggerTest);
     }
-
 
     [Theory]
     [InlineData("Hola mundo", 2)]
@@ -21,7 +24,7 @@ public class TextManagerTest
     public void CountWords(string text, int expected)
     {
         // Arrange
-        var textmanager = new TextManager(text);
+        var textmanager = new TextManager(text, loggerTest);
     
         // Act
         var result = textmanager.CountWords();
@@ -35,7 +38,7 @@ public class TextManagerTest
     public void CountWords_ClassData(string text, int expected)
     {
         // Arrange
-        var textmanager = new TextManager(text);
+        var textmanager = new TextManager(text, loggerTest);
     
         // Act
         var result = textmanager.CountWords();
@@ -48,7 +51,7 @@ public class TextManagerTest
     public void CountWords_NotZero_Moq()
     {
         // Arrange
-        var mock = new Mock<TextManager>("Texto");
+        var mock = new Mock<TextManager>("Texto", loggerTest);
         mock.Setup(p => p.CountWords()).Returns(1);
     
         // Act
@@ -87,7 +90,7 @@ public class TextManagerTest
     [Fact]
     public void FindExactWord_Exception()
     {
-        var textmanager = new TextManager("hola hola desde xunit");
+        var textmanager = new TextManager("hola hola desde xunit", loggerTest);
 
         Assert.ThrowsAny<Exception>(() => textmanager.FindExactWord(null, true));
     }
