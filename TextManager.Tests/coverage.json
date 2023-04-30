@@ -1,0 +1,432 @@
+{
+  "TextManager.dll": {
+    "C:\\Users\\javie\\source\\repos\\Testing\\demoxunit\\TextManager\\TextManager.cs": {
+      "TextManager.TextManager": {
+        "System.String TextManager.TextManager::get_TextOriginal()": {
+          "Lines": {
+            "32": 35
+          },
+          "Branches": []
+        },
+        "System.String TextManager.TextManager::get_TextEdited()": {
+          "Lines": {
+            "37": 18
+          },
+          "Branches": []
+        },
+        "System.Int32 TextManager.TextManager::CountWords()": {
+          "Lines": {
+            "44": 6,
+            "46": 6,
+            "49": 6,
+            "51": 62,
+            "52": 22,
+            "54": 22,
+            "55": 20,
+            "56": 20,
+            "57": 20,
+            "58": 22,
+            "60": 6,
+            "62": 6,
+            "63": 6
+          },
+          "Branches": [
+            {
+              "Line": 51,
+              "Offset": 62,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 22
+            },
+            {
+              "Line": 54,
+              "Offset": 45,
+              "EndOffset": 47,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 20
+            },
+            {
+              "Line": 54,
+              "Offset": 45,
+              "EndOffset": 53,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 22
+            },
+            {
+              "Line": 51,
+              "Offset": 62,
+              "EndOffset": 64,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Int32 TextManager.TextManager::CountLetters()": {
+          "Lines": {
+            "70": 0,
+            "72": 0,
+            "75": 0,
+            "77": 0,
+            "78": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "86": 0,
+            "87": 0
+          },
+          "Branches": [
+            {
+              "Line": 77,
+              "Offset": 68,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 80,
+              "Offset": 45,
+              "EndOffset": 47,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 80,
+              "Offset": 45,
+              "EndOffset": 59,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 77,
+              "Offset": 68,
+              "EndOffset": 70,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 TextManager.TextManager::CountWordsTextEdited()": {
+          "Lines": {
+            "94": 0,
+            "96": 0,
+            "99": 0,
+            "101": 0,
+            "102": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "110": 0,
+            "111": 0
+          },
+          "Branches": [
+            {
+              "Line": 101,
+              "Offset": 62,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 45,
+              "EndOffset": 47,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 45,
+              "EndOffset": 53,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 101,
+              "Offset": 62,
+              "EndOffset": 64,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<System.Int32> TextManager.TextManager::FindWord(System.String,System.Boolean)": {
+          "Lines": {
+            "120": 2,
+            "121": 2,
+            "122": 2,
+            "124": 2,
+            "125": 2,
+            "126": 2,
+            "127": 2,
+            "128": 2,
+            "130": 2,
+            "131": 4,
+            "132": 2,
+            "133": 2,
+            "136": 2,
+            "137": 2,
+            "139": 2,
+            "140": 2
+          },
+          "Branches": [
+            {
+              "Line": 124,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 124,
+              "Offset": 17,
+              "EndOffset": 41,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 131,
+              "Offset": 79,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 131,
+              "Offset": 79,
+              "EndOffset": 81,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<System.Text.RegularExpressions.Match> TextManager.TextManager::FindExactWord(System.String,System.Boolean)": {
+          "Lines": {
+            "149": 1,
+            "151": 1,
+            "153": 1,
+            "156": 1,
+            "158": 4,
+            "159": 1,
+            "160": 1,
+            "161": 1,
+            "162": 1,
+            "163": 1,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "177": 0,
+            "178": 0
+          },
+          "Branches": [
+            {
+              "Line": 158,
+              "Offset": 166,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            },
+            {
+              "Line": 160,
+              "Offset": 62,
+              "EndOffset": 64,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 163,
+              "Offset": 101,
+              "EndOffset": 103,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 163,
+              "Offset": 101,
+              "EndOffset": 114,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 160,
+              "Offset": 62,
+              "EndOffset": 117,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 170,
+              "Offset": 145,
+              "EndOffset": 147,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 170,
+              "Offset": 145,
+              "EndOffset": 158,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 166,
+              "EndOffset": 168,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<System.Text.RegularExpressions.Match> TextManager.TextManager::FindWordRepetContinue(System.String,System.Boolean)": {
+          "Lines": {
+            "187": 0,
+            "189": 0,
+            "191": 0,
+            "194": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "215": 0,
+            "216": 0
+          },
+          "Branches": [
+            {
+              "Line": 196,
+              "Offset": 166,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 198,
+              "Offset": 62,
+              "EndOffset": 64,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 201,
+              "Offset": 101,
+              "EndOffset": 103,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 201,
+              "Offset": 101,
+              "EndOffset": 114,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 198,
+              "Offset": 62,
+              "EndOffset": 117,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 208,
+              "Offset": 145,
+              "EndOffset": 147,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 208,
+              "Offset": 145,
+              "EndOffset": 158,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 196,
+              "Offset": 166,
+              "EndOffset": 168,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Text.RegularExpressions.MatchCollection TextManager.TextManager::FindWordAllRepetContinue()": {
+          "Lines": {
+            "223": 0,
+            "225": 0,
+            "228": 0,
+            "230": 0,
+            "231": 0
+          },
+          "Branches": []
+        },
+        "System.Void TextManager.TextManager::.ctor(System.String,Microsoft.Extensions.Logging.ILogger`1<TextManager.TextManager>)": {
+          "Lines": {
+            "20": 18,
+            "21": 18,
+            "22": 18,
+            "23": 18,
+            "24": 18,
+            "25": 18
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
